@@ -1,0 +1,25 @@
+{
+  "name": "cat-sweetalert",
+  "version": "1.1.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yanweiqing",
+  "license": "MIT",
+  "files": [
+    "src/",
+    "dist/",
+    "assets",
+    "examples/"
+  ],
+  "devDependencies": {
+    "cat-server": "^0.2.2",
+    "myui-core": "^0.x"
+  },
+  "dependencies": {
+    "@myfe/cat-button": "^1.x",
+    "@myfe/cat-dialog": "^1.x"
+  }
+}
