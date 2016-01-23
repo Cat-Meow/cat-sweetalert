@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Dialog, { Footer } from '@myfe/cat-dialog';
+import Dialog, { Footer } from 'cat-modal';
 import Alert from './alert';
 import Confirm from './confirm';
 

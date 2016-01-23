@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from '@myfe/cat-button';
+import Button from 'cat-btn';
 
 class Alert extends Component {
 
