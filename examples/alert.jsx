@@ -4,40 +4,26 @@ import Sweet from '../src/index.js';
 import '../assets/index.less';
 
 export default class Example extends Component {
-    onAlert = () => {
+    onAlert() {
         Sweet.alert('你说啥');
     }
-    onAlert1 = () => {
+    onAlertSuccess() {
         Sweet.alert('你说啥', '好吧', 'success');
     }
-    onAlert2 = () => {
+    onAlertWarning() {
         Sweet.alert('别乱动手', 'warning');
     }
-    onAlert3 = () => {
+    onAlertDanger() {
         Sweet.alert('你说啥', '好吧', '好吧', 'danger');
     }
     
     render() {
         return (
             <div>
-                <Button onClick={this.onAlert}>
-                    alert
-                </Button>
-                <Button myStyle="success"
-                    onClick={this.onAlert1}
-                >
-                    alert
-                </Button>
-                <Button myStyle="warning"
-                    onClick={this.onAlert2}
-                >
-                    alert
-                </Button>
-                <Button myStyle="danger"
-                    onClick={this.onAlert3}
-                >
-                    alert
-                </Button>
+                <Button onClick={this::this.onAlert}>alert</Button>
+                <Button onClick={this::this.onAlertSuccess} myStyle="success">alert</Button>
+                <Button onClick={this::this.onAlertWarning} myStyle="warning">alert</Button>
+                <Button onClick={this::this.onAlertDanger} myStyle="danger">alert</Button>
             </div>
         );
     }

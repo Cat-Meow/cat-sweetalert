@@ -48,4 +48,4 @@ export default class Example extends Component {
             </div>
         );
     }
-}; 
+};
