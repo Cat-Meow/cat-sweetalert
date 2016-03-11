@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from 'cat-btn';
+import Button from 'rs-button';
 
 class Confirm extends Component {
     state = {
@@ -63,8 +63,8 @@ class Confirm extends Component {
             iconClassName = `glyphicon glyphicon-${icons[style] ? icons[style] : 'info-sign'}`;
 
         return (
-            <div className="clearfix cat-confirm">
-                <div className="row cat-alert-container">
+            <div className="clearfix salt-confirm">
+                <div className="row salt-alert-container">
                     <i className={iconClassName} />
                     <div>
                         <h2>{this.props.config.title}</h2>

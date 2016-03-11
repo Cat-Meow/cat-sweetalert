@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from 'cat-btn';
+import Button from 'rs-button';
 
 class Alert extends Component {
 
@@ -32,8 +32,8 @@ class Alert extends Component {
         }
 
         return (
-            <div className={`alert alert-${style} cat-sweetalert clearfix`}>
-                <div className="row cat-alert-container">
+            <div className={`alert alert-${style} salt-sweetalert clearfix`}>
+                <div className="row salt-alert-container">
                     <i className={`glyphicon glyphicon-${icon}`} />
                     <div>
                         <h2>{title}</h2>

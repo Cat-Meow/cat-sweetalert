@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from 'cat-btn';
+import Button from 'rs-button';
 import Sweet from '../src/index.js';
 import '../assets/index.less';
 
