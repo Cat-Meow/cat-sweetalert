@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Button from 'rs-button';
 import Sweet from '../src/index.js';
-import '../assets/index.less';
 
 export default class Example extends Component {
     onConfirm(info) {
