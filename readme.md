@@ -1,10 +1,8 @@
-#Cat-SweetAlert
+# React Salt - SweetAlert
 
 依赖于Dialog组件，动态产生弹出框
 
 * Sweet.alert()
-
-
 
 * Sweet.confirm(info, function(confirm) {})
 

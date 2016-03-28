@@ -34,8 +34,7 @@ class Confirm extends Component {
     }
 
     renderInput() {
-        return this.props.isPrompt ?
-            (
+        return this.props.isPrompt && (
                 <form>
                     <div className="form-group">
                         <textarea
@@ -47,8 +46,7 @@ class Confirm extends Component {
                         />
                     </div>
                 </form>
-            ) :
-            null;
+            );
     }
 
     render() {

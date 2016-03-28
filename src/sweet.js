@@ -5,6 +5,12 @@ import Alert from './alert';
 import Confirm from './confirm';
 
 class SweetAlert extends Component {
+
+    constructor(props) {
+        super(props);
+        this.close = this.close.bind(this);
+    }
+
     state={
         show: false
     }
@@ -18,7 +24,7 @@ class SweetAlert extends Component {
         });
     }
 
-    _close() {
+    close() {
         this.setState({
             show: false
         });
@@ -29,23 +35,23 @@ class SweetAlert extends Component {
             <Dialog
                 show={this.state.show}
                 toBody={false}
-                onClose={this::this._close}
+                onClose={this.close}
                 noButtons
                 title=''
                 autoClose={false}
             >
-                {this._renderContent()}
+                {this.renderContent()}
             </Dialog>
         );
     }
 
-    _renderContent() {
+    renderContent() {
         switch (this.state.type) {
             case 'alert':
                 return (
                     <Alert
                         config={this.state.config}
-                        close={this::this._close}
+                        close={this.close}
                     />
                 );
                 break;
@@ -54,7 +60,7 @@ class SweetAlert extends Component {
                     <Confirm
                         config={this.state.config}
                         callback={this.state.callback}
-                        close={this::this._close}
+                        close={this.close}
                     />
                 );
                 break;
@@ -63,7 +69,7 @@ class SweetAlert extends Component {
                     <Confirm
                         config={this.state.config}
                         callback={this.state.callback}
-                        close={this::this._close}
+                        close={this.close}
                         isPrompt
                     />        
                 );
@@ -86,4 +92,4 @@ SweetAlert.newInstance = function (type){
     }
 }
 
-export default SweetAlert
+export default SweetAlert;
