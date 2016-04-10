@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Dialog, { Footer } from 'rs-dialog';
+import Dialog from 'rs-dialog';
 import Alert from './alert';
 import Confirm from './confirm';
 
@@ -31,6 +31,9 @@ class SweetAlert extends Component {
     }
 
     render() {
+        if (!this.state.show) {
+            return null;
+        }
         return (
             <Dialog
                 show={this.state.show}
